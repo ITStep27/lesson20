@@ -1,0 +1,163 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: roboto;
+	font-size: 16px;
+}
+header {
+	width: 910px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0 20px;
+}
+nav ul {
+	list-style-type: none;
+}
+nav ul li {
+	display: inline-block;
+	margin: 0 15px;
+}
+nav ul li a {
+	text-decoration-line: none;
+	color: #adabac;
+	padding: 10px;
+}
+nav ul li a:hover {
+	color:black;
+border-bottom: 2px solid gray;
+}
+
+nav ul li input {
+	outline: none;
+	border:none;
+	border-bottom: 1px solid #b2b2b3;
+	padding-bottom: 5px;
+	font-size: 1rem;
+}
+nav ul li input::placeholder {
+	color:#757573;
+}
+ section.watch {
+ 	height: 625px;
+	background-image: url(../img/watches.png);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	display: flex;
+	border-bottom:1px solid #999;
+	min-width: 800px;
+}
+div.container {
+	width: 910px;
+	margin: 0 auto;
+	display: flex;
+}
+section.watch > div.container {
+	padding: 100px 0;
+}
+section.watch > div.container div {
+	width: 400px; height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+section.watch > div.container div h2, section.last > div.container div h2, footer div h2 {
+	font-size: 2.5rem;
+}
+section.watch > div.container div p, section.last > div.container div p, footer div p {
+	color: #999;
+	border-left: 1px solid #999;
+	padding-left: 30px;
+	line-height: 2rem;
+}
+section.watch > div.container div button, section.last > div.container div button, footer div button {
+	text-transform: uppercase;
+	border:none;
+	outline:none;
+	background-color: #ea625c;
+	color:#fff;
+	margin-top: 20px;
+	padding: 10px;
+}
+section.watch > div.container div button:hover, section.last > div.container div button:hover, footer div button:hover {
+	cursor: pointer;
+	background-color: #ea2c5c;
+}
+
+section.columns {
+	padding: 0;
+}
+section.columns div.container div {
+	padding: 20px 0;
+}
+section.columns div h1{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.9rem;
+	padding: 0 0 20px 0;
+}
+section.columns div p{
+	font-size: 0.9rem;
+	padding-right: 20px;
+	color:black;
+}
+section.columns div p+p {
+	color:gray;
+	font-size: 1.3em;
+}
+.learn {
+	text-transform: uppercase;
+	color:#ea2c5c;
+	font-size: 0.8em;
+}
+.learn a {
+	cursor: pointer;
+	padding: 10px;
+	color:#ea2c5c;
+	text-decoration: none;
+}
+.learn a::before {
+	content:"";
+	display: inline-block;
+	width: 30px;
+	border-top: 2px solid #ea2c5c;
+	position: relative;
+	top:-3px;
+}
+.learn a:hover::before{
+	content:"";
+	width: 50px;
+	transition-duration: 0.5s;
+}
+.last img {
+	height: 500px;
+}
+.last .container {
+	align-items: center;
+}
+footer {
+	margin-top: 40px;
+	width: 100%;
+	min-width:1050px;
+}
+footer img {
+	width: 100%;
+}
+footer div h2, footer div p {
+	color:white;
+}
+footer div h2 {
+}
+footer div p {
+	border-left: 2px solid white;
+	width: 90%;
+}
+footer div {
+	position: relative;
+	width: 40%;
+	top: -600px;
+	left: 50%;
+}
